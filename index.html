@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <!-- Vinculando el archivo CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a mi Portafolio</h1>
+        <button id="toggle-menu">☰ Menú</button>
+        <nav id="nav-list">
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Soy Gabriel Zabaleta y soy un desarrollador web apasionado por crear proyectos innovadores.</p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="carousel">
+            <img src="OIP.jpeg" alt="Proyecto 1" style="display: block;">
+            <img src="R.jpeg" alt="Proyecto 2" style="display: none;">
+            <img src="OIP (1).jpeg" alt="Proyecto 3" style="display: none;">
+        </div>
+        <button class="prev">Anterior</button>
+        <button class="next">Siguiente</button>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <button id="toggle-theme">Cambiar Tema</button>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
